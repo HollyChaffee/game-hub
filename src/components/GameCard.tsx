@@ -3,6 +3,7 @@ import { Game } from "./hooks/useGames";
 import { Card, CardBody, HStack, Heading, Image, Text } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
+
 /* need to pass a game object as a prompt to the component */
 /* use an interface to define shape of props */
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
 }
 const GameCard = ({ game }: Props) => {
   return (
-    <Card borderRadius={10} overflow="hidden">
+    <Card width='175px' borderRadius={10} overflow="hidden">
       <Image src={game.background_image} />
       <CardBody>
         <Heading fontSize="sm">{game.name}</Heading>
