@@ -6,27 +6,27 @@ import GameCardContainer from "./GameCardContainer";
 
 /* need a state variable for storing game objects*/
 const GameGrid = () => {
-  const { games, error, isLoading } =
+  const { data, error, isLoading } =
     useGames(); /* use object to destructure games and error. Now this component is primarily responsible for returning some markup */
   const skeletons = [1, 2, 3, 4, 5, 6];
 
   return (
     <>
       {error && <Text>{error}</Text>}
-      <SimpleGrid 
+      <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
         padding="10px"
         spacing={6}
       >
         {isLoading &&
           skeletons.map((skeleton) => (
-            <GameCardContainer>
-              <GameCardSkeleton key={skeleton} />
+            <GameCardContainer key={skeleton}>
+              <GameCardSkeleton />
             </GameCardContainer>
           ))}
-        {games.map((game) => (
-            <GameCardContainer>
-          <GameCard key={game.id} game={game} />
+        {data.map((game) => (
+          <GameCardContainer key={game.id}>
+            <GameCard game={game} />
           </GameCardContainer>
         ))}
       </SimpleGrid>
