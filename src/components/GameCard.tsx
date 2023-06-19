@@ -1,7 +1,8 @@
 import React from "react";
 import { Game } from "./hooks/useGames";
-import { Card, CardBody, Heading, Image, Text } from "@chakra-ui/react";
+import { Card, CardBody, HStack, Heading, Image, Text } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
+import CriticScore from "./CriticScore";
 /* need to pass a game object as a prompt to the component */
 /* use an interface to define shape of props */
 interface Props {
@@ -12,11 +13,12 @@ const GameCard = ({ game }: Props) => {
     <Card borderRadius={10} overflow="hidden">
       <Image src={game.background_image} />
       <CardBody>
-        <Heading fontSize="md">{game.name}</Heading>
-        <PlatformIconList
-          platforms={game.parent_platforms.map((p) => p.platform)}
-        />
-        {/* mapping is constructing an array of platform objects */}
+        <Heading fontSize="sm">{game.name}</Heading>
+        <HStack justifyContent='space-between'>
+           <PlatformIconList  /* mapping is constructing an array of platform objects */
+          platforms={game.parent_platforms.map((p) => p.platform)} />
+        <CriticScore score={game.metacritic} /> 
+        </HStack>
       </CardBody>
     </Card>
   );
