@@ -6,9 +6,9 @@ import {
   FaLinux,
   FaAndroid,
 } from "react-icons/fa";
-import { MdPhoneIphone } from 'react-icons/md';
-import { SiNintendo } from 'react-icons/si';
-import { BsGlobe } from 'react-icons/bs'
+import { MdPhoneIphone } from "react-icons/md";
+import { SiNintendo } from "react-icons/si";
+import { BsGlobe } from "react-icons/bs";
 import { HStack, Icon } from "@chakra-ui/react";
 import { Platform } from "./hooks/useGames";
 import { chakra } from "@chakra-ui/react";
@@ -19,23 +19,24 @@ interface Props {
 }
 
 const PlatformIconList = ({ platforms }: Props) => {
-    const iconMap: { [key: string]: IconType } = { // name: PlayStation slug: playstation Think of slug as textual id, better to rely on slug as it is not supposed to change.
-        pc: FaWindows,
-        playstation: FaPlaystation,
-        xbox: FaXbox,
-        nintendo: SiNintendo,
-        mac: FaApple,
-        linux: FaLinux,
-        android: FaAndroid,
-        ios: MdPhoneIphone,
-        web: BsGlobe
-    }
+  const iconMap: { [key: string]: IconType } = {
+    // name: PlayStation slug: playstation Think of slug as textual id, better to rely on slug as it is not supposed to change.
+    pc: FaWindows,
+    playstation: FaPlaystation,
+    xbox: FaXbox,
+    nintendo: SiNintendo,
+    mac: FaApple,
+    linux: FaLinux,
+    android: FaAndroid,
+    ios: MdPhoneIphone,
+    web: BsGlobe,
+  };
   return (
     <HStack marginY={1}>
       {platforms.map((platform) => (
-        <Icon as={iconMap[platform.slug]} color='gray.500' />
+        <Icon key={platform.id} as={iconMap[platform.slug]} color="gray.500" />
       ))}
-      </HStack>
+    </HStack>
   );
 };
 
