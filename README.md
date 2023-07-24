@@ -13,6 +13,8 @@ Whether you're a gaming enthusiast or a developer looking to explore modern web 
 ### Tutorial Source:
 This project was built following a tutorial from "Code With Mosh."
 
+I definitely recommend taking this course as it is up-to-date, and the instructor is thorough in his explanations. 
+
 [React 18 For Beginners](https://codewithmosh.com/p/ultimate-react-part1) - by Mosh Hamedani
 
 ### Learning:
@@ -22,6 +24,7 @@ I have more learning to do before building this kind of project independently. O
 
 ### Current Status: 
 I will be deploying this project on Vercel soon. The PlayStation platform is not rendering correctly and needs to be fixed. 
-I definitely recommend taking this course as it is up-to-date, and the instructor is thorough in his explanations. 
+
+![Screenshot of GameHub](/Users/hollychaffee/Pictures/GameHub.png)
 
 
