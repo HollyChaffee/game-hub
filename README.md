@@ -25,6 +25,8 @@ I have more learning to do before building this kind of project independently. O
 ### Current Status: 
 I will be deploying this project on Vercel soon. The PlayStation platform is not rendering correctly and needs to be fixed. 
 
+Here is a screenshot of what the game looks like!
+
 ![Screenshot of GameHub](src/assets/GameHub.png)
 
 
