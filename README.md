@@ -24,7 +24,10 @@ but I need to learn JavaScript more thoroughly before tackling TypeScript again.
 I have more learning to do before building this kind of project independently. On goes the fun of learning!
 
 ### Current Status: 
-I will be deploying this project on Vercel soon. The PlayStation platform is not rendering correctly and needs to be fixed. 
+The PlayStation platform is not rendering correctly and needs to be fixed. 
+
+### Deployment Link:
+[game-hub on Vercel](https://game-hub-cyan-psi.vercel.app/?vercelToolbarCode=Gy0Fr7W5zetSZGt)
 
 Here is a screenshot of what the game-hub project looks like!
 
