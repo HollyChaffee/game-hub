@@ -1,6 +1,7 @@
 # game-hub
 ### Project Introduction:
-Hello! Welcome to the Game-Hub Project! This repository houses a collection of interactive games and applications built using React, Vite, TypeScript, HTML, CSS, and Chakra UI. 
+Hello! Welcome to the Game-Hub Project! This repository houses a collection of interactive games and applications built using React, Vite, TypeScript, HTML, CSS, and Chakra UI. This is a dynamic, interactive project that pulls live game data from rawg.io
+
 Whether you're a gaming enthusiast or a developer looking to explore modern web technologies, you'll find something exciting here.
 
 ### Installation and Setup:
@@ -25,7 +26,7 @@ I have more learning to do before building this kind of project independently. O
 ### Current Status: 
 I will be deploying this project on Vercel soon. The PlayStation platform is not rendering correctly and needs to be fixed. 
 
-Here is a screenshot of what the game looks like!
+Here is a screenshot of what the game-hub project looks like!
 
 ![Screenshot of GameHub](src/assets/GameHub.png)
 
